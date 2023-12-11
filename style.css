@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url(toyota_supra_toyota_sportkar_139935_3840x2400.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    color:bisque;
+}
+header {
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+}
+.content {
+    overflow: auto;
+    min-height: 100%;
+}
+.menu {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.menu a {
+    text-decoration: none;
+    background-color: black;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: bisque;
+}
+.main {
+    flex: 1 0 auto;
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+
+}
+.right {
+    background-color: black;
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+}
+footer {
+    flex-shrink: 0;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 7px;
+}
+@media only screen and 
+(max-width: 620px) {
+    .menu .main .right {
+          width: 100%;
+}
+}
+@media only screen and
+(max-width 767px){
+body {background-image:url (toyota_supra_toyota_sportkar_139935_3840x2400.jpg); 
+}
+}
